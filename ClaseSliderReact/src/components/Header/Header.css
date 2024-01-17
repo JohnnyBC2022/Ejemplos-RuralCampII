@@ -1,0 +1,8 @@
+header {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+  }
+  

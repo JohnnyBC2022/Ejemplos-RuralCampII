@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {text-wrap: balance}
+  p {text-wrap:pretty}
+  
+  :root {
+    --black: #000;
+    --blackOpacity: rgba(0, 0, 0, 0.9);
+    --grey: rgb(97, 97, 97);
+    --white: #fff;
+    --myFont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: var(--blackOpacity);
+  }
+  
+  header {
+    background-color: var(--black);
+    color: var(--white);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 3rem;
+  }
+  
+  #slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  #controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  #prev,
+  #next {
+    width: 8rem;
+    height: 5rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  #prev:hover,
+  #next:hover {
+    background-color: var(--grey);
+  }
+  
+  #currentVideo {
+    width: 108rem;
+    margin: 1rem auto;
+  }
+  
+  #thumbnails {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    overflow: auto;
+  }
+  
+  #thumbnails .item {
+    min-width: 32rem;
+    height: 18rem;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  

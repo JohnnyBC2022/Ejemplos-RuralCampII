@@ -39,11 +39,12 @@ body {
     text-align: center;
     width: calc(100% - 2rem);
     font-size: 4rem;
+    margin-top: 4rem;
 }
 
 #game {
   height: 100vh;
-  max-height: 700px;
+  max-height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -85,4 +86,21 @@ body {
 .card .back{
     border: 2px solid var(--blue);
     background: url(img/back.png) center / contain no-repeat;
+}
+
+#restartButton{
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#restartButton:hover{
+  color: var(--black);
 }

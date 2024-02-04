@@ -46,7 +46,7 @@ button {
   font-size: 2.6rem;
   padding: 1rem 3rem;
   cursor: pointer;
-  transition: .3s;
+  transition: .3s ease all;
 }
 
 .cell {
@@ -55,7 +55,7 @@ button {
   opacity: 0.2;
   float: left;
   cursor: pointer;
-  transition: .3s;
+  transition: .3s ease all;
 }
 
 .cell.active {
